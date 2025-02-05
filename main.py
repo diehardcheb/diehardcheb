@@ -1,10 +1,9 @@
 from flask import Flask, request
-import aiogram as telegram
+import telegram
 import os
 
 app = Flask(__name__)
 #TOKEN = os.getenv('BOT_TOKEN')
-TOKEN="qwerty"
 bot = telegram.Bot(token=TOKEN)
 
 @app.route('/webhook', methods=['POST'])
